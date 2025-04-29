@@ -1,0 +1,30 @@
+{
+  "name": "ea-learning-resources",
+  "version": "1.0.0",
+  "description": "Educational resources catalog for easy browsing and filtering",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "learning",
+    "resources",
+    "education",
+    "catalog"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {
+    "fuse.js": "^7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasRohde/ea-learning-resources.git"
+  },
+  "homepage": "https://ThomasRohde.github.io/ea-learning-resources"
+}
