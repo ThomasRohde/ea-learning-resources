@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,23 +16,23 @@
             --dark-text: #2c3e50;
             --light-text: #ecf0f1;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--light-bg);
             color: var(--dark-text);
             padding-top: 80px;
         }
-        
+
         .navbar {
             background-color: var(--primary-color);
         }
-        
+
         .navbar-brand {
             font-weight: bold;
             color: var(--light-text) !important;
         }
-        
+
         .card {
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -39,39 +40,39 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
         }
-        
+
         .card-header {
             background-color: var(--primary-color);
             color: var(--light-text);
             font-weight: 600;
             border-radius: 8px 8px 0 0 !important;
         }
-        
+
         .card-title {
             color: var(--primary-color);
             font-weight: 600;
         }
-        
+
         .badge {
             font-size: 0.8rem;
             font-weight: 500;
             margin-right: 5px;
             margin-bottom: 5px;
         }
-        
+
         .badge-type {
             background-color: var(--secondary-color);
         }
-        
+
         .badge-career {
             background-color: var(--accent-color);
         }
-        
+
         .stats {
             margin-top: 20px;
             background-color: white;
@@ -79,7 +80,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-        
+
         .filter-section {
             background-color: white;
             padding: 20px;
@@ -87,56 +88,56 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             margin-bottom: 20px;
         }
-        
+
         .filter-title {
             color: var(--primary-color);
             font-weight: 600;
             margin-bottom: 15px;
         }
-        
+
         .form-control:focus {
             border-color: var(--secondary-color);
             box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
         }
-        
+
         .btn-primary {
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
         }
-        
+
         .btn-primary:hover {
             background-color: #2980b9;
             border-color: #2980b9;
         }
-        
+
         .source-tag {
             font-size: 0.85rem;
             font-style: italic;
             color: #6c757d;
         }
-        
+
         .card-link {
             color: var(--secondary-color);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s ease;
         }
-        
+
         .card-link:hover {
             color: var(--primary-color);
             text-decoration: underline;
         }
-        
+
         .career-level-icon {
             font-size: 1.1rem;
             margin-right: 5px;
         }
-        
+
         .dropdown-menu {
             max-height: 300px;
             overflow-y: auto;
         }
-        
+
         .checkbox-container {
             max-height: 200px;
             overflow-y: auto;
@@ -144,17 +145,17 @@
             border: 1px solid #dee2e6;
             border-radius: 4px;
         }
-        
+
         .form-check {
             padding-left: 2rem;
         }
-        
+
         .highlight {
             background-color: #fff3cd;
             padding: 0 2px;
             border-radius: 3px;
         }
-        
+
         .no-results {
             text-align: center;
             padding: 40px;
@@ -162,11 +163,12 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
-        
+
         @media (max-width: 768px) {
             .filter-section {
                 margin-bottom: 15px;
             }
+
             .btn-filter-apply {
                 width: 100%;
             }
@@ -176,24 +178,24 @@
             width: 3rem;
             height: 3rem;
         }
-        
+
         .loading-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 200px;
         }
-        
+
         #totalResults {
             font-weight: bold;
         }
-        
+
         .clear-filter {
             cursor: pointer;
             margin-left: 5px;
             color: var(--accent-color);
         }
-        
+
         .active-filters {
             margin: 10px 0;
             padding: 10px;
@@ -203,7 +205,7 @@
             flex-wrap: wrap;
             gap: 8px;
         }
-        
+
         .filter-tag {
             display: inline-flex;
             align-items: center;
@@ -213,7 +215,7 @@
             border-radius: 15px;
             font-size: 0.85rem;
         }
-        
+
         .remove-tag {
             cursor: pointer;
             margin-left: 5px;
@@ -223,12 +225,12 @@
             background-color: #e7f1ff;
             color: var(--primary-color);
         }
-        
+
         .dark-mode {
             background-color: #121212;
             color: #f8f9fa;
         }
-        
+
         .dark-mode .card,
         .dark-mode .filter-section,
         .dark-mode .stats,
@@ -236,25 +238,26 @@
             background-color: #1e1e1e;
             color: #f8f9fa;
         }
-        
+
         .dark-mode .card-header {
             background-color: #2c3e50;
         }
-        
+
         .dark-mode .card-title {
             color: #3498db;
         }
-        
+
         .dark-mode .text-muted,
         .dark-mode .source-tag {
             color: #adb5bd !important;
         }
-        
+
         #darkModeToggle {
             cursor: pointer;
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
@@ -280,7 +283,8 @@
         <div class="row mb-4">
             <div class="col-md-12">
                 <h1 class="mb-4 text-center">Enterprise Architecture Learning Resources</h1>
-                <p class="lead text-center">Discover resources to advance your Enterprise Architecture skills and career</p>
+                <p class="lead text-center">Discover resources to advance your Enterprise Architecture skills and career
+                </p>
             </div>
         </div>
 
@@ -292,7 +296,8 @@
                             <label for="searchInput" class="form-label">Search Resources</label>
                             <div class="input-group">
                                 <span class="input-group-text"><i class="bi bi-search"></i></span>
-                                <input type="text" class="form-control" id="searchInput" placeholder="Search by title, description, or any keyword...">
+                                <input type="text" class="form-control" id="searchInput"
+                                    placeholder="Search by title, description, or any keyword...">
                                 <button class="btn btn-primary" type="button" id="searchButton">Search</button>
                             </div>
                         </div>
@@ -301,11 +306,13 @@
                     <div class="accordion" id="filtersAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#filterCollapse">
                                     Advanced Filters
                                 </button>
                             </h2>
-                            <div id="filterCollapse" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
+                            <div id="filterCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#filtersAccordion">
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-md-4 mb-3">
@@ -324,18 +331,23 @@
                                             <label for="careerLevelFilter" class="form-label">Career Level</label>
                                             <select class="form-select" id="careerLevelFilter">
                                                 <option value="">All Career Levels</option>
-                                                <option value="Associate Enterprise Architect">Associate Enterprise Architect</option>
+                                                <option value="Associate Enterprise Architect">Associate Enterprise
+                                                    Architect</option>
                                                 <option value="Enterprise Architect">Enterprise Architect</option>
-                                                <option value="Senior Enterprise Architect">Senior Enterprise Architect</option>
-                                                <option value="Chief Enterprise Architect">Chief Enterprise Architect</option>
-                                                <option value="Principal Enterprise Architect">Principal Enterprise Architect</option>
+                                                <option value="Senior Enterprise Architect">Senior Enterprise Architect
+                                                </option>
+                                                <option value="Chief Enterprise Architect">Chief Enterprise Architect
+                                                </option>
+                                                <option value="Principal Enterprise Architect">Principal Enterprise
+                                                    Architect</option>
                                                 <option value="All levels">All levels</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 text-end">
-                                            <button class="btn btn-secondary me-2" type="button" id="clearFiltersButton">
+                                            <button class="btn btn-secondary me-2" type="button"
+                                                id="clearFiltersButton">
                                                 <i class="bi bi-x-circle"></i> Clear Filters
                                             </button>
                                             <button class="btn btn-primary" type="button" id="applyFiltersButton">
@@ -398,1779 +410,9 @@
             <p>Enterprise Architecture Learning Catalogue - Created at Danske Bank</p>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-    <script>
-        // Sample data from the catalogue.json file (first 25 entries)
-        const catalogueData = [
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "TOGAF® Enterprise Architecture: Foundation & Practitioner (10th Edition)",
-    "type": "Certification Program",
-    "description": "Accredited self-paced course that prepares learners for both TOGAF 10 Foundation and Practitioner exams; includes an exam voucher and practice tests.",
-    "link": "https://goodelearning.com/course_category/togaf-standard-10th-edition/",
-    "source": "Good e-Learning",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "ArchiMate® 3 Practitioner",
-    "type": "Certification Program",
-    "description": "Self-paced e-learning that teaches the full ArchiMate 3.2 specification and provides exam simulators for both Part 1 and Part 2 certification tests.",
-    "link": "https://goodelearning.com/product/enterprise-architecture/archimate-3-practitioner-level-1-2-self-paced-e-learning/",
-    "source": "Good e-Learning",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "SAFe® for Architects",
-    "type": "Workshop",
-    "description": "Three-day instructor-led workshop that equips system, solution and enterprise architects to align architecture with business value and lead Agile Release Trains in SAFe.",
-    "link": "https://scaledagile.com/training/safe-for-architects/",
-    "source": "Scaled Agile",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Architecture of Complex Systems",
-    "type": "Online Course",
-    "description": "Five-week MIT xPRO course (4–6 hrs/week) that introduces systems thinking, DSMs and stakeholder-focused architectural decision-making; counts toward MIT’s Architecture & Systems Engineering certificate.",
-    "link": "https://xpro.mit.edu/courses/course-v1%3AxPRO%2BSysEngx1/",
-    "source": "MIT xPRO",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Principal Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Pluralsight Enterprise Architecture Foundations",
-    "type": "Online Course",
-    "description": "This course will teach you how enterprise architecture helps to align IT operations and infrastructure with business goals and processes.",
-    "link": "https://www.pluralsight.com/courses/enterprise-architecture-foundations",
-    "source": "Pluralsight",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "AWS Skill Builder – Solutions Architect Professional Learning Plan",
-    "type": "Training Lab",
-    "description": "Role-based digital curriculum with 600+ courses, guided labs, simulations and official exam prep for the AWS Certified Solutions Architect – Professional credential.",
-    "link": "https://aws.amazon.com/training/digital/",
-    "source": "Amazon Web Services",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "Google Cloud Digital Leader Learning Path",
-    "type": "Training Lab",
-    "description": "No-cost Skills Boost path with six on-demand courses and labs that position Google Cloud services in a digital-transformation context and prepare learners for the Cloud Digital Leader exam.",
-    "link": "https://www.cloudskillsboost.google/paths/9",
-    "source": "Google Cloud Skills Boost",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "iSAQB CPSA-A – Enterprise Architecture Management Module",
-    "type": "Certification Program",
-    "description": "Advanced-level module in the iSAQB CPSA program that covers EAM approaches, governance, capability-based planning and the interaction between software and enterprise architecture.",
-    "link": "https://public.isaqb.org/curriculum-eam/curriculum-eam-en.html",
-    "source": "iSAQB",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Principal Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "The Agile Architecture Revolution",
-    "type": "Book",
-    "description": "Classic Wiley title reframing EA for cloud, mobile and REST-based ecosystems, championing agility and continuous business adaptation.",
-    "link": "https://www.amazon.com/Agile-Architecture-Revolution-REST-Based-Enterprise/dp/1118409779",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Architecture Modernization: Socio-technical Alignment of Software, Strategy, and Structure",
-    "type": "Book",
-    "description": "Hands-on techniques for evolving legacy portfolios and aligning domain, team and platform architecture to business flow (Manning, 2024).",
-    "link": "https://www.amazon.com/Architecture-Modernization-Socio-technical-alignment-structure/dp/1633438155",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architecture in the Digital World: Central Concepts and Methods for EAM in Agile Project Work",
-    "type": "Book",
-    "description": "2024 Springer text linking agile methods, SAFe and neuro-psychology to contemporary EA practice, with future-skills focus.",
-    "link": "https://link.springer.com/book/10.1007/978-3-658-45667-2",
-    "source": "Springer",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architects: The Agents of Digital Transformation",
-    "type": "Book",
-    "description": "Systematic, 538-page exploration of the EA profession’s roles, value creation and competencies in the era of continuous digital change.",
-    "link": "https://www.amazon.com/Enterprise-Architects-Agents-Digital-Transformation/dp/176364863X",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "The Practice of Enterprise Architecture: A Modern Approach to Business and IT Alignment (2nd Edition)",
-    "type": "Book",
-    "description": "Comprehensive, research-driven playbook for aligning architecture with strategy, curricula-adopted worldwide; includes 100+ real-world artefacts.",
-    "link": "https://www.amazon.com/Practice-Enterprise-Architecture-Approach-Alignment/dp/0648309827",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Strategic Enterprise Architecture Management: Challenges, Best Practices, and Future Developments",
-    "type": "Book",
-    "description": "Research-based survey of governance, processes and culture drawn from eight leading European firms, with forward-looking EAM trends.",
-    "link": "https://www.amazon.com/Strategic-Enterprise-Architecture-Management-Professionals/dp/364244380X",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architecture: A Practitioner’s Handbook",
-    "type": "Book",
-    "description": "Field-tested principles, patterns and decision frameworks from veteran architects, bridging strategic intent with practical solution design.",
-    "link": "https://www.amazon.com/Enterprise-Architecture-Gopala-Krishna-Behara/dp/0929652568",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "ArchiMate® 3.2 Specification",
-    "type": "Standard",
-    "description": "Authoritative Open Group specification defining the current ArchiMate modelling language, including 2022 clarifications and corrections.",
-    "link": "https://pubs.opengroup.org/architecture/archimate32-doc.singlepage/",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "TOGAF® Business Architecture Level 1 Study Guide",
-    "type": "Study Guide",
-    "description": "Official self-study text covering every objective of the TOGAF Business Architecture Level 1 credential, with chapter quizzes and exam tips.",
-    "link": "https://www.amazon.com/TOGAF%C2%AE-Business-Architecture-Level-Study/dp/9401804818",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "The TOGAF® Standard, 10th Edition – A Pocket Guide",
-    "type": "Standard",
-    "description": "Concise, 180-page reference distilling the structure and key concepts of TOGAF® v10; ideal for quick lookup and grounding in the latest framework release.",
-    "link": "https://www.amazon.com/TOGAF-Standard-Pocket-Guide/dp/9401808562",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architecture Handbook",
-    "type": "Reference Guide",
-    "description": "A comprehensive guide covering implementation methodology, design artifacts, and reference models.",
-    "link": "https://doit.maryland.gov/policies/Documents/Policies/DoIT-EA-Handbook.pdf",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "Getting Started with Enterprise Architecture",
-    "type": "Book",
-    "description": "Getting Started with Enterprise Architecture: a practical and pragmatic approach to learning the basics of Enterprise Architecture.",
-    "link": "https://eawheel.com/books/getting-started-with-enterprise-architecture/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "IT4IT™ Standard v3",
-    "type": "Standard",
-    "description": "Value-stream-oriented operating model for managing the digital product lifecycle",
-    "link": "https://pubs.opengroup.org/it4it/3.0.1/standard/",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "Mastering the TOGAF Standard",
-    "type": "Study Guide",
-    "description": "A comprehensive guide to implementing and deploying architectures based on the TOGAF framework.",
-    "link": "https://eawheel.com/books/mastering-the-togaf-standard/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "Open Agile Architecture (O-AA)™ Standard",
-    "type": "Standard",
-    "description": "Outcome-based guidance for architecting in agile digital-transformation contexts",
-    "link": "https://www.opengroup.org/AgileArchitecture",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "TOGAF Standard (10th Edition)",
-    "type": "Standard",
-    "description": "The core EA methodology and ADM, free to download for evaluation. The official documentation for the TOGAF framework.",
-    "link": "https://pubs.opengroup.org/togaf-standard/",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "All levels"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "TOGAF® Enterprise Architecture Foundation Study Materials",
-    "type": "Study Guide",
-    "description": "Online self-study materials for the TOGAF EA Foundation certification.",
-    "link": "https://shop.opengroup.org/study-materials/b226",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Developing Digital Transformation Strategies",
-    "type": "Online Course",
-    "description": "Five-week programme on leading enterprise-wide digital change",
-    "link": "https://www.edx.org/executive-education/institute-for-management-development-imd-developing-digital-transformation-strategies",
-    "source": "edX",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Enterprise Architecture Foundations",
-    "type": "Online Course",
-    "description": "A course on LinkedIn Learning that covers the basics of enterprise architecture and the role of an enterprise architect.",
-    "link": "https://www.linkedin.com/learning/enterprise-architecture-foundations",
-    "source": "LinkedIn Learning",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Introduction to Enterprise Computing",
-    "type": "Online Course",
-    "description": "Explains core mainframe concepts and EA families in 10 hours",
-    "link": "https://www.coursera.org/learn/introduction-enterprise-computing",
-    "source": "Coursera",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Microservices: The Big Picture",
-    "type": "Online Course",
-    "description": "Strategic overview of microservice architecture trade-offs",
-    "link": "https://www.pluralsight.com/courses/microservices-big-picture",
-    "source": "Pluralsight",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Organizational Design for Digital Transformation",
-    "type": "Online Course",
-    "description": "Applies operating-model thinking to large-scale transformation",
-    "link": "https://www.edx.org/executive-education/massachusetts-institute-of-technology-organizational-design-for-digital-transformation",
-    "source": "edX",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "TOGAF 10 Foundation",
-    "type": "Online Course",
-    "description": "Self-paced prep for the latest TOGAF Foundation exam. A comprehensive introduction to TOGAF 10 principles and methodologies.",
-    "link": "https://www.coursera.org/learn/togaf-10-foundation",
-    "source": "Coursera",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "EACOE Enterprise Architecture Workshop",
-    "type": "Workshop",
-    "description": "What you get from The Enterprise Architecture Center Of Excellence (EACOE.org) Training and Certification Workshop is the ONLY Enterprise Architecture Program that provides EVERYTHING Professionals and Organizations need to get going “Monday Morning;” high-return methods, easy-to-use tools, proven techniques, optimized framework, real-world examples, step-by-step videos, and more! We are focused on your success, with NO recurring monthly/annual fees that lock you in forever.",
-    "link": "https://www.eacoe.org/",
-    "source": "EACOE",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "Explore DDD Workshops",
-    "type": "Workshop",
-    "description": "Strategic & tactical Domain-Driven Design deep dives",
-    "link": "https://exploreddd.com/",
-    "source": "Explore DDD",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "Holistic Enterprise Architecture - Executive Education by CMU",
-    "type": "Workshop",
-    "description": "An executive education program focusing on data-driven strategies and AI integration in EA.",
-    "link": "https://execed.s3d.cmu.edu/elearning/programs/enterprise-architecture/index.html",
-    "source": "CMU",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "TOGAF Training Course by EA Principals",
-    "type": "Workshop",
-    "description": "An instructor-led course to learn the TOGAF framework and prepare for certification.",
-    "link": "https://eaprincipals.com/togaf-9-2-training",
-    "source": "EA Principals",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "TOGAF EA Training DK",
-    "type": "Workshop",
-    "description": "Comprehensive instructor-led training covering both TOGAF Foundation and Practitioner levels.",
-    "link": "https://www.teknologisk.dk/kurser/togaf-ea-training-combined/k87177",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "Enterprise Architecture Center of Excellence (EACOE) Certification",
-    "type": "Certification Program",
-    "description": "Executive-level certification for principal enterprise architects.",
-    "link": "https://www.eacoe.org/certification",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "FEAC Certified Enterprise Architect",
-    "type": "Certification Program",
-    "description": "FEAC certifications have long been the standard for Enterprise Architecture hiring and competency.",
-    "link": "https://zachman-feac.com/feac/certification-comparison",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "TOGAF 10 Practitioner Certification",
-    "type": "Certification Program",
-    "description": "The learning paths within The Open Group TOGAF certification portfolio are designed to address specific skillsets and competencies drawn from the standard.  ",
-    "link": "https://www.opengroup.org/certifications/togaf",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "The Open Group study guides",
-    "type": "Exam Guide",
-    "description": "Study Guides and Practice Tests",
-    "link": "https://www.opengroup.org/certifications/study-guides-and-practice-test",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "Enterprise Architecture Webinars on BrightTALK",
-    "type": "Webinar",
-    "description": "A collection of webinars on various EA topics from industry experts.",
-    "link": "https://www.brighttalk.com/topic/enterprise-architecture",
-    "source": "BrightTALK",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "MIT CISR Enterprise Architecture research",
-    "type": "Journal Article",
-    "description": "Research briefings on Enterprise Architecture.",
-    "link": "https://cisr.mit.edu/events",
-    "source": "MIT CISR",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "Gartner Leadership Vision for Enterprise Architecture 2024",
-    "type": "Webinar",
-    "description": "Trends and action items for EA leaders",
-    "link": "https://www.gartner.com/en/webinar/582731/1306146",
-    "source": "Gartner",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "Forrester Technology Webinars",
-    "type": "Webinar",
-    "description": "Hear from Forrester thought leaders during live regional events, or learn on your own time with an on-demand webinar.",
-    "link": "https://www.forrester.com/webinars/#it",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "“This Is My Architecture”",
-    "type": "Video Series",
-    "description": "Deep dive into real-world reference architectures.",
-    "link": "https://www.youtube.com/playlist?list=PL5bUlblGfe0JhZt_NlcnRvBVFk0sIr5PS",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "Enterprise Architecture Professional Journal",
-    "type": "Journal Article",
-    "description": "EAPJ is a Center of Excellence for Enterprise Architecture and was established to support the discipline, its practitioners, and the associated ecosystem.",
-    "link": "https://eapj.org/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "Journal of Enterprise Architecture (JEA)",
-    "type": "Journal Article",
-    "description": "Quarterly publication by AEA on EA professional development. Research articles on EA capability maturity and value measurement",
-    "link": "https://www.globalaea.org/?page=JEA_Overview",
-    "source": "Journal of Enterprise Architecture",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "Special issue on architecture quality – Journal of Systems & Software",
-    "type": "Journal Article",
-    "description": "Evidence-based guidelines for architectural technical debt",
-    "link": "https://www.sciencedirect.com/journal/journal-of-systems-and-software/special-issue/105R99223BX",
-    "source": "Journal of Systems & Software",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "The Open Group YouTube Channel",
-    "type": "Video Channel",
-    "description": "Recorded sessions from The Open Group events on EA, TOGAF, ArchiMate, etc.",
-    "link": "https://www.youtube.com/user/TheOpenGroup",
-    "source": "YouTube",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "Design Better",
-    "type": "Podcast",
-    "description": "Insightful 30-minute interviews on product & system design practices",
-    "link": "https://designbetterpodcast.com/",
-    "source": "Design Better",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "Explore DDD 2024 Keynote Recordings",
-    "type": "Conference Talk",
-    "description": "Explore DDD is designed for senior developers, team leads, and software architects - technical leaders with experience building software systems for complex domains. The conference provides a creative space where domain-driven design (DDD) explorers, enthusiasts and experts can connect and share real-world experience of applying DDD philosophy and techniques.",
-    "link": "https://www.youtube.com/exploreddd",
-    "source": "Explore DDD",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "Architecture Webinars",
-    "type": "Webinar",
-    "description": "Beginner-friendly webinars covering EA fundamentals.",
-    "link": "https://publications.opengroup.org/webinars/architecture",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "Enterprise Architecture Radio",
-    "type": "Podcast",
-    "description": "An exploration into organizational agility, innovation and EA Frameworks in practice. My name is Neil, I am a practicing enterprise architect and these are my stories.",
-    "link": "https://www.youtube.com/channel/UCviHHLRBbt5W8njoOrlOoiA",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "GOTO Conferences Channel",
-    "type": "Video Channel",
-    "description": "1,000+ architecture talks searchable by theme",
-    "link": "https://www.youtube.com/@GOTO-",
-    "source": "GOTO Conferences",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "Mark Richards' Software Architecture Monday",
-    "type": "Video Channel",
-    "description": "Software Architecture Monday with Mark Richards is a free software architecture channel containing 10 minute videos about some aspect of software architecture. These lessons contain tips, techniques, and advice to help you in your journey from developer to architect.",
-    "link": "https://www.youtube.com/@markrichards5014",
-    "source": "YouTube",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "REAL Talk with Sam Holcman",
-    "type": "Podcast",
-    "description": "Hosted by an EA veteran, this series dives into enterprise architecture challenges and solutions, covering topics like EA governance, framework selection, and business architecture integration.",
-    "link": "https://www.youtube.com/playlist?list=PLp66jrkjlFSx8bOmcY5yOpCi--brjshyp",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "Thoughtworks Technology Podcast",
-    "type": "Podcast",
-    "description": "Stay up to date, broaden your knowledge and get inspired with our technology and business podcasts.",
-    "link": "https://www.thoughtworks.com/insights/podcasts",
-    "source": "Thoughtworks",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "What’s Your Baseline?",
-    "type": "Podcast",
-    "description": "Twice-monthly show on EA & BPM transformation stories. An enterprise architecture podcast featuring discussions with EA thought leaders, exploring practical approaches, tools, and tips to maximize value delivery by architecture teams.",
-    "link": "https://whatsyourbaseline.com/",
-    "source": "What’s Your Baseline?",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Enterprise Architect",
-      "All levels"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "YouTube – Enterprise Architecture Channel",
-    "type": "Video Channel",
-    "description": "A channel devoted to explaining what Enterprise Architecture is, why it is useful, and how to do it.",
-    "link": "https://www.youtube.com/@EnterpriseArchitecture",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "Enterprise Architecture Network on LinkedIn",
-    "type": "Community Forum",
-    "description": "This is a LinkedIn group for people into Enterprise Architecture (CIO, CTO, Enterprise Architects, Business Architects, Information Architects, Application Architects, Technology Architects, IT Strategists, IT and Corporate Governance staffs).",
-    "link": "https://www.linkedin.com/groups/36781/",
-    "source": "LinkedIn",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "Iasa Global BTABoK Community",
-    "type": "Community Forum",
-    "description": "Open-source Body of Knowledge wiki & discussion space",
-    "link": "https://iasa-global.github.io/btabok/",
-    "source": "IASA",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "The Software Architects’ Newsletter",
-    "type": "Newsletter",
-    "description": "A monthly guide to all the topics, technologies, and techniques that every professional or aspiring software architect needs to know about.",
-    "link": "https://www.infoq.com/software-architects-newsletter/",
-    "source": "InfoQ",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "r/EnterpriseArchitecture (Reddit)",
-    "type": "Community Forum",
-    "description": "An online forum where architects share advice, ask questions, and discuss real-world challenges and solutions in enterprise architecture in an informal setting.",
-    "link": "https://www.reddit.com/r/EnterpriseArchitect/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "Google Cloud Skills Boost (Qwiklabs)",
-    "type": "Training Lab",
-    "description": "Google Cloud’s interactive labs and quests where architects can practice designing and deploying solutions on GCP aligned with the Google Cloud Architecture Framework.",
-    "link": "https://www.cloudskillsboost.google/",
-    "source": "Google",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Enterprise Architect",
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "IBM Cloud Native Academy",
-    "type": "Training Lab",
-    "description": "Subscription sandbox with guided Kubernetes & DevOps challenges",
-    "link": "https://www.ibm.com/products/cloud-native-academy",
-    "source": "IBM",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Microsoft Azure Fundamentals",
-    "type": "Online Course",
-    "description": " Microsoft Azure fundamentals is a three-part series that teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.",
-    "link": "https://learn.microsoft.com/en-us/training/paths/azure-architect-design/",
-    "source": "Microsoft Learn",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "CodeMentor - Enterprise Architect Experts",
-    "type": "Mentoring Program",
-    "description": "Online platform for mentorship from experienced EAs.",
-    "link": "https://www.codementor.io/enterprise-architect-experts",
-    "source": "CodeMentor",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "Enterprise Architecture Master Class",
-    "type": "Masterclass",
-    "description": "Six-month program with expert mentorship in EA.",
-    "link": "https://www.realirm.com/enterprise-architecture-master-class",
-    "source": "Real IRM",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "Executive Coaching Services",
-    "type": "Coaching Session",
-    "description": "Engage specialized coaches focusing on executive leadership development, strategic influence, and navigating C-suite dynamics (requires sourcing appropriate providers).",
-    "link": "https://mentorcruise.com/executives/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "Certified Enterprise Architect (CEA) by FEAC Institute",
-    "type": "Certification Program",
-    "description": "Certification program validating expertise in enterprise architecture.",
-    "link": "https://zachman-feac.com/feac/certification-comparison",
-    "source": "FEAC Institute",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "CITA-P Professional Certification",
-    "type": "Certification Program",
-    "description": "Portfolio & oral defence for enterprise-wide architectural mastery",
-    "link": "https://www.iasaglobal.org/cita-professional/",
-    "source": "IASA",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "The Open Group Blog",
-    "type": "Blog",
-    "description": "Blog posts on EA, standards, and certifications.",
-    "link": "https://blog.opengroup.org/category/enterprise-architecture-2/",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "The Architect Elevator",
-    "type": "Blog",
-    "description": "Gregor Hohpe’s blog on communicating architecture",
-    "link": "https://architectelevator.com/",
-    "source": "Gregor Hohpe",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "EA Voices",
-    "type": "Blog",
-    "description": "A thematic aggregator of dozens of EA blogs providing a “river of news” with the latest opinions, insights, and experiences from enterprise architects around the world.",
-    "link": "https://eavoices.com/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Industry white-papers & analyst reports",
-    "title": "Gartner Leadership Vision: Enterprise Architecture 2024",
-    "type": "Analyst Report",
-    "description": "Strategic priorities for C-level EA leaders",
-    "link": "https://www.gartner.com/en/webinar/582731/1306146",
-    "source": "Gartner",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Industry white-papers & analyst reports",
-    "title": "Forrester Wave™ Enterprise Architecture Management Suites (Q2 2024)",
-    "type": "Analyst Report",
-    "description": "Vendor comparison across 27 criteria.",
-    "link": "https://www.forrester.com/blogs/announcing-the-enterprise-architecture-management-suites-landscape-q2-2024/",
-    "source": "Forrester",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "Strategic Alignment of Enterprise Architecture",
-    "type": "Academic Paper",
-    "description": "Strategic alignment of enterprise architecture management – how portfolios of control mechanisms track a decade of enterprise transformation at Commerzbank.",
-    "link": "https://www.tandfonline.com/doi/full/10.1080/0960085X.2022.2085200#abstract",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Peer-reviewed journals & academic papers",
-    "title": "On Enterprise Architecture Patterns for Sustainable Transformation",
-    "type": "Academic Paper",
-    "description": "Methodology for embedding ESG objectives in EA patterns",
-    "link": "https://link.springer.com/content/pdf/10.1007%2F978-3-030-75418-1_39.pdf",
-    "source": "Springer",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "The Software Architect Elevator",
-    "type": "Book",
-    "description": "Offers real-world advice for IT transformations and redefines the architect's role in the digital enterprise.",
-    "link": "https://www.amazon.com/dp/1492077542",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Technology Strategy Patterns: Architecture as Strategy",
-    "type": "Book",
-    "description": "Advanced strategic patterns connecting technology architecture to business strategy.",
-    "link": "https://www.amazon.com/Technology-Strategy-Patterns-Architecture/dp/1492040878",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Software Architecture in Practice (4th ed.)",
-    "type": "Book",
-    "description": "End-to-end guide to designing, analysing and evolving complex architectures",
-    "link": "https://insights.sei.cmu.edu/library/software-architecture-in-practice-fourth-edition/",
-    "source": "SEI",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Patterns of Enterprise Application Architecture",
-    "type": "Book",
-    "description": "Catalog of proven architectural patterns for large-scale information systems. A highly-rated guide to enterprise application design patterns.",
-    "link": "https://martinfowler.com/books/eaa.html",
-    "source": "Martin Fowler",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Mastering ArchiMate Edition 3.1",
-    "type": "Book",
-    "description": "An in-depth guide to the ArchiMate modeling language for enterprise architecture, suitable for intermediate to advanced practitioners.",
-    "link": "https://www.amazon.com/dp/9083143414",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Getting Started with Enterprise Architecture",
-    "type": "Book",
-    "description": "A practical guide for novice architects to learn the basics of enterprise architecture through a structured approach.",
-    "link": "https://www.amazon.com/dp/1484298578",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Fundamentals of Enterprise Architecture Management",
-    "type": "Book",
-    "description": "Research-based framework covering strategy, process and metrics for holistic EAM",
-    "link": "https://link.springer.com/content/pdf/10.1007/978-3-030-96734-5.pdf",
-    "source": "Springer",
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architecture at Work",
-    "type": "Book",
-    "description": "Practical modeling, communication and analysis techniques for enterprise architecture. Provides a comprehensive overview, including modeling and visualization techniques using ArchiMate.",
-    "link": "https://www.amazon.com/Enterprise-Architecture-Work-Communication-Engineering/dp/3642296505",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect",
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Enterprise Architecture As Strategy",
-    "type": "Book",
-    "description": "The highly-rated foundational text that connects enterprise architecture to business execution.",
-    "link": "https://www.amazon.com/Enterprise-Architecture-Strategy-Foundation-Execution/dp/1591398398",
-    "source": "Amazon",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "Chess and the Art of Enterprise Architecture",
-    "type": "Book",
-    "description": "Strategic thinking for enterprise architects using chess as a metaphor.",
-    "link": "https://www.amazon.com/Chess-Enterprise-Architecture-Gerben-Wierda/dp/9081984055",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "Bizzdesign Enterprise Architecture Podcast",
-    "type": "Podcast",
-    "description": "Vendor-sponsored podcast with interviews and case studies on how global organizations approach enterprise architecture and ensure business-IT alignment.",
-    "link": "https://bizzdesign.com/podcast/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "Architecture Principles: The Cornerstones of Enterprise Architecture",
-    "type": "Framework Documentation",
-    "description": "A deep dive into architectural principles for senior architects.",
-    "link": "https://www.amazon.com/Architecture-Principles-Cornerstones-Enterprise-Engineering/dp/3642202780",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "Association of Enterprise Architects (AEA) Community",
-    "type": "Community Forum",
-    "description": "Global professional association for EAs that offers member blogs, discussion forums, and local chapter events, enabling networking and knowledge exchange among peers. Member discussion boards, SIGs and local chapters.",
-    "link": "https://www.globalaea.org/",
-    "source": "AEA",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Blogs, newsletters & community forums",
-    "title": "Architecture & Governance Magazine",
-    "type": "Newsletter",
-    "description": "A digital magazine and newsletter focusing on enterprise IT architecture and governance, regularly publishing practitioner articles, book reviews, and interviews on emerging trends.",
-    "link": "https://www.architectureandgovernance.com/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect",
-      "Principal Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "ArchiMate 3.2 Specification",
-    "type": "Standard",
-    "description": "Open modelling language for describing enterprise architectures",
-    "link": "https://www.opengroup.org/archimate-licensed-downloads",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Foundational Books & Reference Handbooks",
-    "title": "An Introduction to Enterprise Architecture",
-    "type": "Book",
-    "description": "A comprehensive beginner-friendly introduction to the field of enterprise architecture.",
-    "link": "https://www.amazon.com/Introduction-Enterprise-Architecture-Third/dp/1477258000",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Webinars & recorded conference talks",
-    "title": "An Introduction to Using ArchiMate",
-    "type": "Webinar",
-    "description": "Walk-through of core viewpoints in Sparx Enterprise Architect",
-    "link": "https://www.youtube.com/watch?v=b49nj0AV5xU",
-    "source": "YouTube",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Framework / Standard Documentation & Study Guides",
-    "title": "ArchiMate 3.1 Specification",
-    "type": "Standard",
-    "description": "The official specification for the ArchiMate enterprise architecture modeling language.",
-    "link": "https://www.opengroup.org/archimate-forum/archimate-overview",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "ArchiMate 3 Foundation & Practitioner",
-    "type": "Certification Program",
-    "description": "Comprehensive certification for the ArchiMate modeling language.",
-    "link": "https://www.opengroup.org/certifications/archimate",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect",
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "ArchiMate 3 Certification Self-Study Pack",
-    "type": "Exam Guide",
-    "description": "Scenario-based practice for ArchiMate Foundation & Practitioner",
-    "link": "https://shop.opengroup.org/b175?_gl=1*1mwk1tl*_ga*NTY0MjAxMTE3LjE3NDIyNzA4MTU.*_ga_LTTWTXF7XY*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..*_ga_R80QG90XKM*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..*_ga_2C9VJRZZ38*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..*_ga_KLT018BLSC*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..*_ga_51ESKVT3R5*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..*_ga_7KXKND8JE1*MTc0NTcyNzUxMC4zLjEuMTc0NTcyNzUyMS4wLjAuMA..&_ga=2.35942368.1342489550.1745646988-564201117.1742270815",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Associate Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "Archi – ArchiMate Modeling Tool",
-    "type": "Sandbox",
-    "description": "An open-source EA modeling tool that provides a sandbox to create ArchiMate diagrams, including the Archisurance sample model for practice.",
-    "link": "https://www.archimatetool.com/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect",
-      "Senior Enterprise Architect",
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "Azure ArcBox Sandbox",
-    "type": "Sandbox",
-    "description": "End-to-end hybrid lab for Arc governance, policy and DevOps",
-    "link": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/hybrid/arc-enabled-servers/enterprise-scale-landing-zone-sandbox",
-    "source": "Microsoft",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "Azure Sandbox",
-    "type": "Sandbox",
-    "description": "Managed subscription with cost guardrails for safe experimentation",
-    "link": "https://learn.microsoft.com/azure/architecture/guide/azure-sandbox/azure-sandbox",
-    "source": "Microsoft",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Architecture podcasts & video channels",
-    "title": "This Is My Architecture",
-    "type": "Video Channel",
-    "description": "Engineers unpack real customer architectures on AWS Cloud",
-    "link": "https://www.youtube.com/playlist?list=PLhr1KZpdzukdeX8mQ2qO73bg6UKQHYsHb",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "Gartner Peer Community",
-    "type": "Mentoring Program",
-    "description": "Private discussion & mentoring circles for senior architects and technology leaders",
-    "link": "https://www.gartner.com/peer-community/home",
-    "source": "Gartner",
-    "verified": true,
-    "recommended_career_levels": [
-      "Chief Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "Iasa Global Structured Mentoring",
-    "type": "Mentoring Program",
-    "description": "Guided mentor–mentee cohorts aligned to BTABoK competencies",
-    "link": "https://iasa-global.github.io/btabok/mentoring.html",
-    "source": "IASA",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "ISACA Global Mentorship Program",
-    "type": "Mentoring Program",
-    "description": "Free 1-to-1 mentoring for emerging technology professionals",
-    "link": "https://mentorship.isaca.org/p/p1/about",
-    "source": "ISACA",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "MentorCruise – Enterprise Architecture Mentors",
-    "type": "Mentoring Program",
-    "description": "An online platform to find and engage with experienced enterprise architecture mentors for one-on-one guidance, career advice, and skill coaching.",
-    "link": "https://mentorcruise.com/career/enterprise-architect/",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Mentoring circles & coaching sessions",
-    "title": "Mentoring Junior Architects",
-    "type": "Mentoring Program",
-    "description": "Share expertise and guide less experienced architects through external programs like AEA's.",
-    "link": "https://www.globalaea.org/group/Mentoring",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Self-paced online courses & MOOCs",
-    "title": "Advanced Enterprise Architecture courses",
-    "type": "Online Course",
-    "description": "Udemy Enterprise Architecture online courses.",
-    "link": "https://www.udemy.com/courses/search/?instructional_level=expert&lang=en&q=Enterprise+Architecture&sort=relevance&src=ukw",
-    "source": null,
-    "verified": true,
-    "recommended_career_levels": [
-      "Principal Enterprise Architect",
-      "Chief Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Instructor-led workshops & bootcamps",
-    "title": "Accredited TOGAF Training Course",
-    "type": "Workshop",
-    "description": "5-day classroom/virtual official prep for TOGAF Foundation & Practitioner",
-    "link": "https://www.opengroup.org/accredited-togaf-training-courses",
-    "source": "The Open Group",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "AWS Well-Architected Labs",
-    "type": "Training Lab",
-    "description": "Free hands-on labs that teach the six Well-Architected pillars. Free, self-paced labs by AWS covering cloud architecture best practices across operational excellence, security, reliability, performance, and cost optimization.",
-    "link": "https://wellarchitectedlabs.com/",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "Associate Enterprise Architect",
-      "Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Vendor / cloud training labs & sandboxes",
-    "title": "AWS Training and Certification for Architects",
-    "type": "Training Lab",
-    "description": "Training and labs for AWS solutions architects.",
-    "link": "https://aws.amazon.com/training/",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "Enterprise Architect",
-      "Senior Enterprise Architect"
-    ]
-  },
-  {
-    "category": "Industry white-papers & analyst reports",
-    "title": "AWS Cloud Adoption Framework (AWS CAF)",
-    "type": "Whitepaper",
-    "description": "The AWS Cloud Adoption Framework (AWS CAF) leverages AWS experience and best practices to help you digitally transform and accelerate your business outcomes through innovative use of AWS. AWS CAF identifies specific organizational capabilities that underpin successful cloud transformations. These capabilities provide best practice guidance that helps you improve your cloud readiness. AWS CAF groups its capabilities in six perspectives: Business, People, Governance, Platform, Security, and Operations. Each perspective comprises a set of capabilities that functionally related stakeholders own or manage in the cloud transformation journey. Use the AWS CAF to identify and prioritize transformation opportunities, evaluate and improve your cloud readiness, and iteratively evolve your transformation roadmap.",
-    "link": "https://aws.amazon.com/whitepapers/aws-cloud-adoption-framework/",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "All levels"
-    ]
-  },
-  {
-    "category": "Certification programmes & exam-prep materials",
-    "title": "AWS Certified Solutions Architect -Professional (SAP-C02) Exam Guide",
-    "type": "Exam Guide",
-    "description": "The AWS Certified Solutions Architect -Professional (SAP-C02) exam is intended for \nindividuals who perform a solutions architect role. The exam validates a candidate’s \nadvanced technical skills and experience in designing optimized AWS solutions that \nare based on the AWS Well-Architected Framework.",
-    "link": "https://d1.awsstatic.com/training-and-certification/docs-sa-pro/AWS-Certified-Solutions-Architect-Professional_Exam-Guide.pdf",
-    "source": "AWS",
-    "verified": true,
-    "recommended_career_levels": [
-      "Senior Enterprise Architect"
-    ]
-  }
-];
-        // Set up Fuse.js with options for fuzzy searching
-        const fuseOptions = {
-            keys: ['title', 'description', 'category', 'type', 'source'],
-            threshold: 0.3,
-            includeScore: true
-        };
-        let fuse = new Fuse(catalogueData, fuseOptions);
-
-        // Global variables
-        let currentResults = [];
-        let filters = {
-            category: '',
-            type: '',
-            careerLevel: ''
-        };
-
-        // DOM Elements
-        const resourcesContainer = document.getElementById('resourcesContainer');
-        const noResults = document.getElementById('noResults');
-        const totalResources = document.getElementById('totalResources');
-        const totalCategories = document.getElementById('totalCategories');
-        const totalResultsElement = document.getElementById('totalResults');
-        const searchInput = document.getElementById('searchInput');
-        const searchButton = document.getElementById('searchButton');
-        const categoryFilter = document.getElementById('categoryFilter');
-        const typeFilter = document.getElementById('typeFilter');
-        const careerLevelFilter = document.getElementById('careerLevelFilter');
-        const applyFiltersButton = document.getElementById('applyFiltersButton');
-        const clearFiltersButton = document.getElementById('clearFiltersButton');
-        const activeFilters = document.getElementById('activeFilters');
-        const loadingContainer = document.getElementById('loadingContainer');
-        const darkModeToggle = document.getElementById('darkModeToggle');
-
-        // Initialize application
-        document.addEventListener('DOMContentLoaded', () => {
-            populateFilters();
-            updateStats();
-            searchResources();
-            setupEventListeners();
-            checkDarkModePreference();
-        });
-
-        // Populate filter dropdowns
-        function populateFilters() {
-            const categories = [...new Set(catalogueData.map(item => item.category))];
-            const types = [...new Set(catalogueData.map(item => item.type))];
-
-            categories.sort().forEach(category => {
-                const option = document.createElement('option');
-                option.value = category;
-                option.textContent = category;
-                categoryFilter.appendChild(option);
-            });
-
-            types.sort().forEach(type => {
-                const option = document.createElement('option');
-                option.value = type;
-                option.textContent = type;
-                typeFilter.appendChild(option);
-            });
-        }
-
-        // Set up event listeners
-        function setupEventListeners() {
-            searchButton.addEventListener('click', () => searchResources());
-            
-            searchInput.addEventListener('keyup', (e) => {
-                if (e.key === 'Enter') {
-                    searchResources();
-                }
-            });
-            
-            applyFiltersButton.addEventListener('click', () => {
-                filters.category = categoryFilter.value;
-                filters.type = typeFilter.value;
-                filters.careerLevel = careerLevelFilter.value;
-                searchResources();
-                updateActiveFilters();
-            });
-            
-            clearFiltersButton.addEventListener('click', () => {
-                categoryFilter.value = '';
-                typeFilter.value = '';
-                careerLevelFilter.value = '';
-                searchInput.value = '';
-                filters = {
-                    category: '',
-                    type: '',
-                    careerLevel: ''
-                };
-                searchResources();
-                updateActiveFilters();
-            });
-            
-            darkModeToggle.addEventListener('click', toggleDarkMode);
-        }
-
-        // Search and filter resources
-        function searchResources() {
-            showLoading();
-            
-            setTimeout(() => {
-                let results = [];
-                const searchQuery = searchInput.value.trim();
-                
-                if (searchQuery) {
-                    results = fuse.search(searchQuery).map(result => result.item);
-                } else {
-                    results = [...catalogueData];
-                }
-                
-                // Apply filters
-                results = filterResults(results);
-                
-                // Update current results and display
-                currentResults = results;
-                displayResults(results);
-                updateStats();
-                hideLoading();
-            }, 300); // Small timeout to show loading effect
-        }
-
-        // Apply category, type, and career level filters
-        function filterResults(results) {
-            return results.filter(item => {
-                // Category filter
-                if (filters.category && item.category !== filters.category) {
-                    return false;
-                }
-                
-                // Type filter
-                if (filters.type && item.type !== filters.type) {
-                    return false;
-                }
-                
-                // Career level filter
-                if (filters.careerLevel) {
-                    if (!item.recommended_career_levels.includes(filters.careerLevel) && 
-                        !item.recommended_career_levels.includes('All levels')) {
-                        return false;
-                    }
-                }
-                
-                return true;
-            });
-        }
-
-        // Display filtered/searched results
-        function displayResults(results) {
-            resourcesContainer.innerHTML = '';
-            
-            if (results.length === 0) {
-                noResults.classList.remove('d-none');
-            } else {
-                noResults.classList.add('d-none');
-                
-                results.forEach(resource => {
-                    const card = createResourceCard(resource);
-                    resourcesContainer.appendChild(card);
-                });
-            }
-            
-            totalResultsElement.textContent = results.length;
-        }
-
-        // Create a card for a resource
-        function createResourceCard(resource) {
-            const col = document.createElement('div');
-            col.className = 'col-md-6 col-lg-4 mb-4';
-            
-            // Create career level badges HTML
-            const careerLevelBadges = resource.recommended_career_levels.map(level => 
-                `<span class="badge bg-secondary badge-career">${level}</span>`
-            ).join(' ');
-            
-            // Highlight search terms in title and description
-            let title = resource.title;
-            let description = resource.description;
-            
-            if (searchInput.value.trim()) {
-                const terms = searchInput.value.trim().split(/\s+/);
-                terms.forEach(term => {
-                    if (term.length > 2) { // Only highlight terms with more than 2 chars
-                        const regex = new RegExp(`(${term})`, 'gi');
-                        title = title.replace(regex, '<span class="highlight">$1</span>');
-                        description = description.replace(regex, '<span class="highlight">$1</span>');
-                    }
-                });
-            }
-            
-            // Source display
-            const sourceDisplay = resource.source ? 
-                `<div class="source-tag mt-2">Source: ${resource.source}</div>` : '';
-            
-            col.innerHTML = `
-                <div class="card">
-                    <div class="card-header">
-                        ${resource.category}
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">${title}</h5>
-                        <div class="mb-2">
-                            <span class="badge bg-primary badge-type">${resource.type}</span>
-                        </div>
-                        <p class="card-text">${description}</p>
-                        <div class="mb-3">
-                            ${careerLevelBadges}
-                        </div>
-                        <a href="${resource.link}" class="card-link" target="_blank">
-                            <i class="bi bi-box-arrow-up-right me-1"></i>Access Resource
-                        </a>
-                        ${sourceDisplay}
-                    </div>
-                </div>
-            `;
-            
-            return col;
-        }
-
-        // Update the statistics display
-        function updateStats() {
-            totalResources.textContent = catalogueData.length;
-            
-            const categories = new Set(catalogueData.map(item => item.category));
-            totalCategories.textContent = categories.size;
-        }
-
-        // Update active filters display
-        function updateActiveFilters() {
-            activeFilters.innerHTML = '';
-            let hasFilters = false;
-            
-            if (filters.category) {
-                createFilterTag('Category', filters.category);
-                hasFilters = true;
-            }
-            
-            if (filters.type) {
-                createFilterTag('Type', filters.type);
-                hasFilters = true;
-            }
-            
-            if (filters.careerLevel) {
-                createFilterTag('Career Level', filters.careerLevel);
-                hasFilters = true;
-            }
-            
-            if (searchInput.value.trim()) {
-                createFilterTag('Search', searchInput.value.trim());
-                hasFilters = true;
-            }
-            
-            if (hasFilters) {
-                activeFilters.classList.remove('d-none');
-            } else {
-                activeFilters.classList.add('d-none');
-            }
-        }
-
-        // Create a filter tag
-        function createFilterTag(type, value) {
-            const tag = document.createElement('div');
-            tag.className = 'filter-tag';
-            tag.innerHTML = `${type}: ${value} <span class="remove-tag" data-type="${type.toLowerCase()}"><i class="bi bi-x-circle"></i></span>`;
-            
-            // Add click event to remove filter
-            tag.querySelector('.remove-tag').addEventListener('click', function() {
-                const filterType = this.getAttribute('data-type');
-                
-                if (filterType === 'category') {
-                    filters.category = '';
-                    categoryFilter.value = '';
-                } else if (filterType === 'type') {
-                    filters.type = '';
-                    typeFilter.value = '';
-                } else if (filterType === 'career' || filterType === 'career level') {
-                    filters.careerLevel = '';
-                    careerLevelFilter.value = '';
-                } else if (filterType === 'search') {
-                    searchInput.value = '';
-                }
-                
-                searchResources();
-                updateActiveFilters();
-            });
-            
-            activeFilters.appendChild(tag);
-        }
-
-        // Show loading state
-        function showLoading() {
-            loadingContainer.classList.remove('d-none');
-            resourcesContainer.classList.add('d-none');
-            noResults.classList.add('d-none');
-        }
-
-        // Hide loading state
-        function hideLoading() {
-            loadingContainer.classList.add('d-none');
-            resourcesContainer.classList.remove('d-none');
-        }
-
-        // Toggle dark mode
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            
-            if (isDarkMode) {
-                darkModeToggle.innerHTML = '<i class="bi bi-sun"></i> Light Mode';
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                darkModeToggle.innerHTML = '<i class="bi bi-moon"></i> Dark Mode';
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        }
-
-        // Check user's dark mode preference
-        function checkDarkModePreference() {
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                document.body.classList.add('dark-mode');
-                darkModeToggle.innerHTML = '<i class="bi bi-sun"></i> Light Mode';
-            }
-        }
-    </script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
